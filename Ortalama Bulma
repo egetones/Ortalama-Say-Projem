@@ -1,13 +1,20 @@
 using System;
+
 class Program
 {
     static void Main()
     {
-        Console.WriteLine("İlk sayıyı girin:");
-        double num1 = double.Parse(Console.ReadLine());
-        Console.WriteLine("İkinci sayıyı girin:");
-        double num2 = double.Parse(Console.ReadLine());
-        double average = (num1 + num2) / 2.0;
-        Console.WriteLine($"Ortalama: {average}");
+        // Kullanıcıdan iki sayı al
+        Console.Write("Birinci sayıyı gir: ");
+        double sayi1 = Convert.ToDouble(Console.ReadLine());
+
+        Console.Write("İkinci sayıyı gir: ");
+        double sayi2 = Convert.ToDouble(Console.ReadLine());
+
+        // Ortalama hesapla
+        double ortalama = (sayi1 + sayi2) / 2;
+
+        // Sonucu ekrana yazdır
+        Console.WriteLine($"\nGirilen sayıların ortalaması: {ortalama}");
     }
 }
